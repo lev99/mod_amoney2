@@ -21,7 +21,7 @@ for Joomla! 1.0 and 1.5 NATIVE
 * ROBOKASSA
 * SMS kopilka
 * SMS zamok
-* money@mail.ru
+* DengiMail.ru
 * LiqPay 
 * SMScoin 
 * SavingsBank 
