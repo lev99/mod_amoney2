@@ -1,10 +1,10 @@
 <?php
 /**
- * @version		1.0.9 2014
- * @package		AMoney
- * @subpackage	mod_amoney
- * @copyright	Copyright (C) Leonidas 2008 - 2011. All rights reserved.
- * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @version     1.0.9 2014
+ * @package     AMoney
+ * @subpackage  mod_amoney
+ * @copyright   Copyright (C) Leonidas 2008 - 2011. All rights reserved.
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
 // no direct access
@@ -15,1397 +15,1397 @@ defined('_JEXEC') or die;
 
 <script type="text/javascript">
 /* <![CDATA[ */
-	<?php 
-	echo $t2; 
-	if ($use_wm)
-	{?>
-	function show_wm()
-	{
-	<?php
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#wm').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-	function show_rupay()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#rupay').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-	function show_yandex()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#yandex').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_egold)
-	{?>
-	function show_egold()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#egold').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-	function show_paypal()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#paypal').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-	function show_libertyreserve()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#libertyreserve').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-	function show_moneybookers()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#moneybookers').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_robox)
-	{?>
-	function show_robox()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#robox').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_sms)
-	{?>
-	function show_sms()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#sms').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-	function show_smsz()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#smsz').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-	function show_mmail()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#mmail').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-	function show_liqpay()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#liqpay').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-	function show_smscoin()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#smscoin').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-	function show_cbank()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide();
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}?>
-		<?php echo $t1;?>('#cbank').<?php echo $jfadtogquery;?>;
-		return false;
-	};
-	<?php
-	}?>
+    <?php
+    echo $t2;
+    if ($use_wm)
+    {?>
+    function show_wm()
+    {
+    <?php
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#wm').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+    function show_rupay()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#rupay').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+    function show_yandex()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#yandex').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_egold)
+    {?>
+    function show_egold()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#egold').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+    function show_paypal()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#paypal').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+    function show_libertyreserve()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#libertyreserve').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+    function show_moneybookers()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#moneybookers').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_robox)
+    {?>
+    function show_robox()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#robox').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_sms)
+    {?>
+    function show_sms()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#sms').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+    function show_smsz()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#smsz').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+    function show_mmail()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#mmail').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+    function show_liqpay()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#liqpay').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+    function show_smscoin()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#smscoin').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+    function show_cbank()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide();
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }?>
+        <?php echo $t1;?>('#cbank').<?php echo $jfadtogquery;?>;
+        return false;
+    };
+    <?php
+    }?>
 
-	function hide_all()
-	{
-	<?php
-	if ($use_wm)
-	{?>
-		<?php echo $t1;?>('#wm').hide();
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<?php echo $t1;?>('#rupay').hide()
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<?php echo $t1;?>('#yandex').hide();
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<?php echo $t1;?>('#egold').hide();
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<?php echo $t1;?>('#paypal').hide();
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<?php echo $t1;?>('#libertyreserve').hide();
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<?php echo $t1;?>('#moneybookers').hide();
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<?php echo $t1;?>('#robox').hide();
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<?php echo $t1;?>('#sms').hide();
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<?php echo $t1;?>('#smsz').hide();
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<?php echo $t1;?>('#mmail').hide();
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<?php echo $t1;?>('#liqpay').hide();
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<?php echo $t1;?>('#smscoin').hide();
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<?php echo $t1;?>('#cbank').hide();
-	<?php
-	}?>
-		return false;
-	}
+    function hide_all()
+    {
+    <?php
+    if ($use_wm)
+    {?>
+        <?php echo $t1;?>('#wm').hide();
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <?php echo $t1;?>('#rupay').hide()
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <?php echo $t1;?>('#yandex').hide();
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <?php echo $t1;?>('#egold').hide();
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <?php echo $t1;?>('#paypal').hide();
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <?php echo $t1;?>('#libertyreserve').hide();
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <?php echo $t1;?>('#moneybookers').hide();
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <?php echo $t1;?>('#robox').hide();
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <?php echo $t1;?>('#sms').hide();
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <?php echo $t1;?>('#smsz').hide();
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <?php echo $t1;?>('#mmail').hide();
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <?php echo $t1;?>('#liqpay').hide();
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <?php echo $t1;?>('#smscoin').hide();
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <?php echo $t1;?>('#cbank').hide();
+    <?php
+    }?>
+        return false;
+    }
 /* ]]> */
 </script>
 
 <!-- Panel -->
 <div id="amoney" class="amoney-module<?php echo $params->get('moduleclass_sfx'); ?>" style="text-align: center;">
-	<?php
-	if ($pretext != '')
-	{?>
+    <?php
+    if ($pretext != '')
+    {?>
 <div class="amoney-mod1" style="text-align: center;">
-		<span class="panel1"><span class="north" onclick="hide_all()" title="<?php echo JText::_('MOD_AMONEY_HIDEALL'); ?>"><?php echo $pretext;?></span></span>
-	</div>
-	<div class="amoney-payment" style="text-align: center;">
-	<?php
-	}
-	if ($use_wm)
-	{?>
-		<a id="h1" class="south" title="<?php echo JText::_('MOD_AMONEY_WEBMONEY'); ?>" onclick="show_wm()"></a>
-	<?php
-	}
-	if ($use_rupay)
-	{?>
-		<a id="h2" class="south" title="<?php echo JText::_('MOD_AMONEY_RBKMONEY'); ?>" onclick="show_rupay()"></a>
-	<?php
-	}
-	if ($use_yandex)
-	{?>
-		<a id="h3" class="south" title="<?php echo JText::_('MOD_AMONEY_YANDEX'); ?>" onclick="show_yandex()" ></a>
-	<?php
-	}
-	if ($use_egold)
-	{?>
-		<a id="h4" class="south" title="<?php echo JText::_('MOD_AMONEY_EGOLD'); ?>" onclick="show_egold()"></a>
-	<?php
-	}
-	if ($use_paypal)
-	{?>
-		<a id="h5" class="south" title="<?php echo JText::_('MOD_AMONEY_PAYPAL'); ?>" onclick="show_paypal()"></a>
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
-		<a id="h6" class="south" title="<?php echo JText::_('MOD_AMONEY_LIBRES'); ?>" onclick="show_libertyreserve()"></a>
-	<?php
-	}
-	if ($use_moneybookers)
-	{?>
-		<a id="h7" class="south" title="<?php echo JText::_('MOD_AMONEY_MONBOOK'); ?>" onclick="show_moneybookers()"></a>
-	<?php
-	}
-	if ($use_robox)
-	{?>
-		<a id="h8" class="south" title="<?php echo JText::_('MOD_AMONEY_ROBOKASSA'); ?>" onclick="show_robox()"></a>
-	<?php
-	}
-	if ($use_sms)
-	{?>
-		<a id="h9" class="south" title="<?php echo JText::_('MOD_AMONEY_SMS'); ?>" onclick="show_sms()"></a>
-	<?php
-	}
-	if ($use_smsz)
-	{?>
-		<a id="h10" class="south" title="<?php echo JText::_('MOD_AMONEY_SMSZ'); ?>" onclick="show_smsz()"></a>
-	<?php
-	}
-	if ($use_mmail)
-	{?>
-		<a id="h11" class="south" title="<?php echo JText::_('MOD_AMONEY_MMAIL'); ?>" onclick="show_mmail()"></a>
-	<?php
-	}
-	if ($use_liqpay)
-	{?>
-		<a id="h12" class="south" title="<?php echo JText::_('MOD_AMONEY_LIQPAY'); ?>" onclick="show_liqpay()"></a>
-	<?php
-	}
-	if ($use_smscoin)
-	{?>
-		<a id="h13" class="south" title="<?php echo JText::_('MOD_AMONEY_SMSCOIN'); ?>" onclick="show_smscoin()"></a>
-	<?php
-	}
-	if ($use_cbank)
-	{?>
-		<a id="h14" class="south" title="CberBank" onclick="show_cbank()"></a>
-	<?php
-	}?>
+        <span class="panel1"><span class="north" onclick="hide_all()" title="<?php echo JText::_('MOD_AMONEY_HIDEALL'); ?>"><?php echo $pretext;?></span></span>
+    </div>
+    <div class="amoney-payment" style="text-align: center;">
+    <?php
+    }
+    if ($use_wm)
+    {?>
+        <a id="h1" class="south" title="<?php echo JText::_('MOD_AMONEY_WEBMONEY'); ?>" onclick="show_wm()"></a>
+    <?php
+    }
+    if ($use_rupay)
+    {?>
+        <a id="h2" class="south" title="<?php echo JText::_('MOD_AMONEY_RBKMONEY'); ?>" onclick="show_rupay()"></a>
+    <?php
+    }
+    if ($use_yandex)
+    {?>
+        <a id="h3" class="south" title="<?php echo JText::_('MOD_AMONEY_YANDEX'); ?>" onclick="show_yandex()" ></a>
+    <?php
+    }
+    if ($use_egold)
+    {?>
+        <a id="h4" class="south" title="<?php echo JText::_('MOD_AMONEY_EGOLD'); ?>" onclick="show_egold()"></a>
+    <?php
+    }
+    if ($use_paypal)
+    {?>
+        <a id="h5" class="south" title="<?php echo JText::_('MOD_AMONEY_PAYPAL'); ?>" onclick="show_paypal()"></a>
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
+        <a id="h6" class="south" title="<?php echo JText::_('MOD_AMONEY_LIBRES'); ?>" onclick="show_libertyreserve()"></a>
+    <?php
+    }
+    if ($use_moneybookers)
+    {?>
+        <a id="h7" class="south" title="<?php echo JText::_('MOD_AMONEY_MONBOOK'); ?>" onclick="show_moneybookers()"></a>
+    <?php
+    }
+    if ($use_robox)
+    {?>
+        <a id="h8" class="south" title="<?php echo JText::_('MOD_AMONEY_ROBOKASSA'); ?>" onclick="show_robox()"></a>
+    <?php
+    }
+    if ($use_sms)
+    {?>
+        <a id="h9" class="south" title="<?php echo JText::_('MOD_AMONEY_SMS'); ?>" onclick="show_sms()"></a>
+    <?php
+    }
+    if ($use_smsz)
+    {?>
+        <a id="h10" class="south" title="<?php echo JText::_('MOD_AMONEY_SMSZ'); ?>" onclick="show_smsz()"></a>
+    <?php
+    }
+    if ($use_mmail)
+    {?>
+        <a id="h11" class="south" title="<?php echo JText::_('MOD_AMONEY_MMAIL'); ?>" onclick="show_mmail()"></a>
+    <?php
+    }
+    if ($use_liqpay)
+    {?>
+        <a id="h12" class="south" title="<?php echo JText::_('MOD_AMONEY_LIQPAY'); ?>" onclick="show_liqpay()"></a>
+    <?php
+    }
+    if ($use_smscoin)
+    {?>
+        <a id="h13" class="south" title="<?php echo JText::_('MOD_AMONEY_SMSCOIN'); ?>" onclick="show_smscoin()"></a>
+    <?php
+    }
+    if ($use_cbank)
+    {?>
+        <a id="h14" class="south" title="CberBank" onclick="show_cbank()"></a>
+    <?php
+    }?>
 </div>
 </div>
-	<?php
-	if ($use_wm)
-	{?>
+    <?php
+    if ($use_wm)
+    {?>
 <!-- Webmoney -->
 <div id="wm" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<form id="wm-pay" name="pay" method="post" action="<?php echo $wm_url_adds; ?>" target="_blank">
-				<div class="cont1" style="text-align: center;">
-					<div id="h15" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
-				<div class="cont1" style="text-align: center;">
-					<span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_CURRENCY_SUM'); ?></span>
-				</div>
-				<div class="cont1" style="text-align: center;">
+    <form id="wm-pay" name="pay" method="post" action="<?php echo $wm_url_adds; ?>" target="_blank">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h15" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_CURRENCY_SUM'); ?></span>
+                </div>
+                <div class="cont1" style="text-align: center;">
 <span class="focus-example1">
-					<input id="wm-pay-1" class="wm-pay-1" type="text" name="LMI_PAYMENT_AMOUNT" size="3" value="<?php echo $wm_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />
+                    <input id="wm-pay-1" class="wm-pay-1" type="text" name="LMI_PAYMENT_AMOUNT" size="3" value="<?php echo $wm_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />
 </span>
 <span class="focus-example">
-				<select id="wm-pay-2" class="wm-pay-2" name="LMI_PAYEE_PURSE"  title="<?php echo JText::_('MOD_AMONEY_CHOOSE_A_CURRENCY'); ?>" style="min-width:30px;" >
-					<optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>">	
-	<?php
-	if ($use_p1)
-	{?>
-						<option value="<?php echo $wmnum1;?>"><?php echo $wmtype1;?></option>
-	<?php
-	}
-	if ($use_p2)
-	{?>
-						<option value="<?php echo $wmnum2;?>"><?php echo $wmtype2;?></option>
-	<?php
-	}
-	if ($use_p3)
-	{?>
-						<option value="<?php echo $wmnum3;?>"><?php echo $wmtype3;?></option>
-	<?php
-	}
-	if ($use_p4)
-	{?>
-						<option value="<?php echo $wmnum4;?>"><?php echo $wmtype4;?></option>
-	<?php
-	}
-	if ($use_p5)
-	{?>
-						<option value="<?php echo $wmnum5;?>"><?php echo $wmtype5;?></option>
-	<?php
-	}?>
-					</optgroup> 
-				</select>
+                <select id="wm-pay-2" class="wm-pay-2" name="LMI_PAYEE_PURSE"  title="<?php echo JText::_('MOD_AMONEY_CHOOSE_A_CURRENCY'); ?>" style="min-width:30px;" >
+                    <optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>">  
+    <?php
+    if ($use_p1)
+    {?>
+                        <option value="<?php echo $wmnum1;?>"><?php echo $wmtype1;?></option>
+    <?php
+    }
+    if ($use_p2)
+    {?>
+                        <option value="<?php echo $wmnum2;?>"><?php echo $wmtype2;?></option>
+    <?php
+    }
+    if ($use_p3)
+    {?>
+                        <option value="<?php echo $wmnum3;?>"><?php echo $wmtype3;?></option>
+    <?php
+    }
+    if ($use_p4)
+    {?>
+                        <option value="<?php echo $wmnum4;?>"><?php echo $wmtype4;?></option>
+    <?php
+    }
+    if ($use_p5)
+    {?>
+                        <option value="<?php echo $wmnum5;?>"><?php echo $wmtype5;?></option>
+    <?php
+    }?>
+                    </optgroup> 
+                </select>
 
 </span>
-					<input type="hidden" name="LMI_PAYMENT_DESC" value="<?php echo $wm_descpay1;?>" />
-					<input type="hidden" name="LMI_PAYMENT_NO" value="<?php echo $random_chars1; ?>" />
-					<input type="hidden" name="LMI_SIM_MODE" value="0" />
-					<input type="hidden" name="LMI_SUCCESS_URL" value="<?php echo $wm_successurl;?>" />
-					<input type="hidden" name="LMI_SUCCESS_METHOD" value="2" />
-					<input type="hidden" name="LMI_FAIL_URL" value="<?php echo $wm_errorurl;?>" />
-					<input type="hidden" name="LMI_FAIL_METHOD" value="2" />
-				</div>
-				<div class="cont2" style="text-align: center;">
-					<input id="wm-pay-button" class="<?php echo $am_button; ?>" type="submit" name="wmsubmit" value="<?php echo $btntxt; ?>" />
-				</div>
-	</form>
+                    <input type="hidden" name="LMI_PAYMENT_DESC" value="<?php echo $wm_descpay1;?>" />
+                    <input type="hidden" name="LMI_PAYMENT_NO" value="<?php echo $random_chars1; ?>" />
+                    <input type="hidden" name="LMI_SIM_MODE" value="0" />
+                    <input type="hidden" name="LMI_SUCCESS_URL" value="<?php echo $wm_successurl;?>" />
+                    <input type="hidden" name="LMI_SUCCESS_METHOD" value="2" />
+                    <input type="hidden" name="LMI_FAIL_URL" value="<?php echo $wm_errorurl;?>" />
+                    <input type="hidden" name="LMI_FAIL_METHOD" value="2" />
+                </div>
+                <div class="cont2" style="text-align: center;">
+                    <input id="wm-pay-button" class="<?php echo $am_button; ?>" type="submit" name="wmsubmit" value="<?php echo $btntxt; ?>" />
+                </div>
+    </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php
-	}
-	if ($use_rupay)
-	{?>
+    <?php
+    }
+    if ($use_rupay)
+    {?>
 <!-- RBKmoney -->
 <div id="rupay"  class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<form id="rupay-pay" name="rupay_rupay" method="post" action="<?php echo $rupay_url_adds; ?>" target="_blank">
-				<div class="cont1" style="text-align: center;">
-					<div id="h16" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
-				<div class="cont1" style="text-align: center;">
-					<span class="letter"><?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT1'); ?></span>
-				</div>
-				<div class="focus-example cont1" style="text-align: center;">
-						<input id="rupay-pay-1" class="rupay-pay-1" type="text" name="recipientAmount" size="3" value="<?php echo $rupay_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />&nbsp;<span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_RBL'); ?></span>
-						<input type="hidden" name="eshopId" value="<?php echo $rupay_submit;?>" />
-						<input type="hidden" name="orderId" value="<?php echo $random_chars1; ?>" />
-						<input type="hidden" name="serviceName" value="<?php echo $random_chars1; ?>" />
-						<input type="hidden" name="recipientCurrency" value="RUR" />
-						<input type="hidden" name="serviceName" value="<?php echo $wm_descpay1;?>" />
-						<input type="hidden" name="eshopAccount" value="<?php echo $rur;?>" />
-						<input type="hidden" name="successUrl" value="<?php echo $rupay_successurl;?>" />
-				</div>
-				<div class="cont2" style="text-align: center;">
-					<input id="rupay-pay-button" class="<?php echo $am_button; ?>" type="submit" name="rupaysubmit" value="<?php echo $btntxt;?>" />
-				</div>
-	</form>
+    <form id="rupay-pay" name="rupay_rupay" method="post" action="<?php echo $rupay_url_adds; ?>" target="_blank">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h16" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <span class="letter"><?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT1'); ?></span>
+                </div>
+                <div class="focus-example cont1" style="text-align: center;">
+                        <input id="rupay-pay-1" class="rupay-pay-1" type="text" name="recipientAmount" size="3" value="<?php echo $rupay_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />&nbsp;<span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_RBL'); ?></span>
+                        <input type="hidden" name="eshopId" value="<?php echo $rupay_submit;?>" />
+                        <input type="hidden" name="orderId" value="<?php echo $random_chars1; ?>" />
+                        <input type="hidden" name="serviceName" value="<?php echo $random_chars1; ?>" />
+                        <input type="hidden" name="recipientCurrency" value="RUR" />
+                        <input type="hidden" name="serviceName" value="<?php echo $wm_descpay1;?>" />
+                        <input type="hidden" name="eshopAccount" value="<?php echo $rur;?>" />
+                        <input type="hidden" name="successUrl" value="<?php echo $rupay_successurl;?>" />
+                </div>
+                <div class="cont2" style="text-align: center;">
+                    <input id="rupay-pay-button" class="<?php echo $am_button; ?>" type="submit" name="rupaysubmit" value="<?php echo $btntxt;?>" />
+                </div>
+    </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php
-	}
-	if ($use_yandex)
-	{?>
+    <?php
+    }
+    if ($use_yandex)
+    {?>
 <!-- Yandex -->
 <div id="yandex" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<form id="yandex-pay" name="yandex_pay" method="post" action="<?php echo $yandex_url_adds; ?>" target="_blank">
-				<div class="cont1" style="text-align: center;">
-					<div id="h17" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
-				<div class="cont1" style="text-align: center;">
-					<span class="letter"><?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT1');?></span>
-				</div>
-				<div class="focus-example cont1" style="text-align: center;">
-					<input id="yandex-pay-1" class="yandex-pay-1" type="text" name="CompanySum" size="3" value="<?php echo $yandex_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />&nbsp;<span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_RBL');?></span>
-					<input type="hidden" name="to" value="<?php echo $yandex;?>" />
-					<input type="hidden" name="CompanyName" value="<?php echo $wm_descpay1;?>" />
-					<input type="hidden" name="CompanyLink" value="<?php echo $yandex_successurl;?>" />
-				</div>
-				<div class="cont1" style="text-align: center;">
-					<span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_ACCOUBT');?></span>&nbsp;<span class="letter2"><?php echo $yandex;?></span>
-				</div>
-				<div class="cont2" style="text-align: center;">
-					<input id="yandex-pay-button" class="<?php echo $am_button; ?>" type="submit" name="yandexsubmit" value="<?php echo $btntxt;?>" />
-				</div>
-	</form>
+    <form id="yandex-pay" name="yandex_pay" method="post" action="<?php echo $yandex_url_adds; ?>" target="_blank">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h17" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <span class="letter"><?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT1');?></span>
+                </div>
+                <div class="focus-example cont1" style="text-align: center;">
+                    <input id="yandex-pay-1" class="yandex-pay-1" type="text" name="CompanySum" size="3" value="<?php echo $yandex_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />&nbsp;<span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_RBL');?></span>
+                    <input type="hidden" name="to" value="<?php echo $yandex;?>" />
+                    <input type="hidden" name="CompanyName" value="<?php echo $wm_descpay1;?>" />
+                    <input type="hidden" name="CompanyLink" value="<?php echo $yandex_successurl;?>" />
+                </div>
+                <div class="cont1" style="text-align: center;">
+                    <span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_ACCOUBT');?></span>&nbsp;<span class="letter2"><?php echo $yandex;?></span>
+                </div>
+                <div class="cont2" style="text-align: center;">
+                    <input id="yandex-pay-button" class="<?php echo $am_button; ?>" type="submit" name="yandexsubmit" value="<?php echo $btntxt;?>" />
+                </div>
+    </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php
-	}
-	if ($use_egold)
-	{?>
+    <?php
+    }
+    if ($use_egold)
+    {?>
 <!-- E-Gold -->
 <div id="egold" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<form  id="egold-pay" name="egold_pay" method="post" action="<?php echo $egold_url_adds; ?>" target="_blank">
-				<div class="cont1" style="text-align: center;">
-					<div id="h18" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
-				<div class="cont1" style="text-align: center;">
-					<span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_CURRENCY_SUM'); ?></span>
-				</div>
-				<div class="cont1" style="text-align: center;">
+    <form  id="egold-pay" name="egold_pay" method="post" action="<?php echo $egold_url_adds; ?>" target="_blank">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h18" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <span class="letter"><?php echo JText::_('MOD_AMONEY_AMONEY_CURRENCY_SUM'); ?></span>
+                </div>
+                <div class="cont1" style="text-align: center;">
             <input type="hidden" name="PAYEE_ACCOUNT"  value="<?php echo $number;?>" />
             <input type="hidden" name="PAYEE_NAME"  value="<?php echo $name;?>" />
             <input type="hidden" name="PAYMENT_METAL_ID" value="1" />  
 <span class="focus-example1">
-			<input id="egold-pay-1" class="egold-pay-1" type="text" name="PAYMENT_AMOUNT"  size="3" value="<?php echo $egold_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />
+            <input id="egold-pay-1" class="egold-pay-1" type="text" name="PAYMENT_AMOUNT"  size="3" value="<?php echo $egold_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />
 </span>
-			<input type="hidden" name="LMI_PAYMENT_DESC" value="<?php echo $wm_descpay1;?>" />
+            <input type="hidden" name="LMI_PAYMENT_DESC" value="<?php echo $wm_descpay1;?>" />
             <input type="hidden" name="STATUS_URL"  value="mailto:<?php echo $mail;?>" />
-			<input type="hidden" name="NOPAYMENT_URL" value="<?php echo $egold_errorurl;?>" />
+            <input type="hidden" name="NOPAYMENT_URL" value="<?php echo $egold_errorurl;?>" />
             <input type="hidden" name="PAYMENT_URL" value="<?php echo $egold_successurl;?>" />
             <input type="hidden" name="BAGGAGE_FIELDS"  value="" />
 <span class="focus-example">
-				<select id="egold-pay-2" class="egold-pay-2" name="payment_units" title="<?php echo JText::_('MOD_AMONEY_CHOOSE_A_CURRENCY'); ?>" style="min-width:30px;">
-                	<optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>"> 
-                		<option value="1">USD</option> 
-                		<option value="85">Euro</option>
-                	</optgroup> 
+                <select id="egold-pay-2" class="egold-pay-2" name="payment_units" title="<?php echo JText::_('MOD_AMONEY_CHOOSE_A_CURRENCY'); ?>" style="min-width:30px;">
+                    <optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>"> 
+                        <option value="1">USD</option> 
+                        <option value="85">Euro</option>
+                    </optgroup> 
                 </select>
 </span>
-			<input type="hidden" name="suggested_memo" value="<?php echo $egoldinfo1; ?>" />
+            <input type="hidden" name="suggested_memo" value="<?php echo $egoldinfo1; ?>" />
           </div>
-		<div class="cont2" style="text-align: center;">
-			<input id="egold-pay-button" class="<?php echo $am_button; ?>" type="submit" name="egoldsubmit" value="<?php echo $btntxt;?>" />
-		</div>
+        <div class="cont2" style="text-align: center;">
+            <input id="egold-pay-button" class="<?php echo $am_button; ?>" type="submit" name="egoldsubmit" value="<?php echo $btntxt;?>" />
+        </div>
 </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php
-	}
-	if ($use_paypal)
-	{?>
+    <?php
+    }
+    if ($use_paypal)
+    {?>
 <!-- PayPal -->
 <div id="paypal" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
 <?php
@@ -1483,142 +1483,142 @@ if ($donate_len == 0) {
   ?>
 <span class="focus-example">
   <select id="paypal-pay-2" class="paypal-pay-2" name="paypallength" title="<?php echo JText::_('MOD_AMONEY_CHOOSE_PERIODICITY'); ?>" style="min-width:30px;">
-	<optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE');?>">
+    <optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE');?>">
     <option value="4"><?php echo JText::_('MOD_AMONEY_ONE_TIME');?></option>
     <option value="1"><?php echo JText::_('MOD_AMONEY_WEEKLY');?></option>
     <option value="2"><?php echo JText::_('MOD_AMONEY_MONTHLY');?></option>
     <option value="3"><?php echo JText::_('MOD_AMONEY_ANNUAL');?></option>
-	</optgroup> 
+    </optgroup>
   </select>
 </span>
-	<?php
-	}
-	else if ($donate_len == 1) 
-	{?>
-	<input type="hidden" name="paypallength" value="<?php echo $paypallen_val;?>" />
-	<?php
-	}?>
+    <?php
+    }
+    else if ($donate_len == 1)
+    {?>
+    <input type="hidden" name="paypallength" value="<?php echo $paypallen_val;?>" />
+    <?php
+    }?>
 </div>
 <div class="cont2" style="text-align: center;">
 <input id="paypal-pay-button" class="<?php echo $am_button; ?>" type="submit" name="paypalsubmit" value="<?php echo $btntxt;?>" />
 </div>
 </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php
-	}
-	if ($use_libertyreserve)
-	{?>
+    <?php
+    }
+    if ($use_libertyreserve)
+    {?>
 <!-- LibertyReserve -->
 <div id="libertyreserve" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<form id="libertyreserve-pay" name="libertyreserve" method="post" action="<?php echo $libertyreserve_url_adds; ?>" target="_blank">
-				<div class="cont1" style="text-align: center;">
-					<div id="h20" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
-				<div class="cont1" style="text-align: center;">
-					<span class="letter"><?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT1');?></span>
-				</div>
-				<div class="cont1" style="text-align: center;">
-	<input type="hidden" name="lr_acc" value="<?php echo $ur;?>" />
+    <form id="libertyreserve-pay" name="libertyreserve" method="post" action="<?php echo $libertyreserve_url_adds; ?>" target="_blank">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h20" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <span class="letter"><?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT1');?></span>
+                </div>
+                <div class="cont1" style="text-align: center;">
+    <input type="hidden" name="lr_acc" value="<?php echo $ur;?>" />
 <?php if ($choose_cur) { ?>
 <span class="focus-example1">
-	<input id="libertyreserve-pay-1" class="libertyreserve-pay-1" type="text" name="lr_amnt" size="3" value="<?php echo $libertyreserve_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />
+    <input id="libertyreserve-pay-1" class="libertyreserve-pay-1" type="text" name="lr_amnt" size="3" value="<?php echo $libertyreserve_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />
 </span>
 <span class="focus-example">
-			<select id="libertyreserve-pay-2" class="libertyreserve-pay-2" name="lr_currency" title="<?php echo JText::_('MOD_AMONEY_CHOOSE_A_CURRENCY'); ?>" style="min-width:30px;">
-				<optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>">
-			<?php foreach ($curr as $cur_code) {
-				$selected = ($cur_code['code'] == $currency_libertyreserve)?' selected="selected"':'';
-				echo '<option value="'.$cur_code['code'].'"'.$selected.'>'.$cur_code['title'].'</option>';
-			}
-			?>
-				</optgroup>
-			</select></span>
+            <select id="libertyreserve-pay-2" class="libertyreserve-pay-2" name="lr_currency" title="<?php echo JText::_('MOD_AMONEY_CHOOSE_A_CURRENCY'); ?>" style="min-width:30px;">
+                <optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>">
+            <?php foreach ($curr as $cur_code) {
+                $selected = ($cur_code['code'] == $currency_libertyreserve)?' selected="selected"':'';
+                echo '<option value="'.$cur_code['code'].'"'.$selected.'>'.$cur_code['title'].'</option>';
+            }
+            ?>
+                </optgroup>
+            </select></span>
 <?php } else { echo '<span class="letter">'.$currency_libertyreserve2.'</span>&nbsp;&nbsp;
 <span class="focus-example1">
-	<input id="libertyreserve-pay-1" class="libertyreserve-pay-1" type="text" name="lr_amnt" value="'.$libertyreserve_summ.'" size="3" title="'.JText::_('MOD_AMONEY_ENTER_AMOUNT').'" '.$amofixed.' />
+    <input id="libertyreserve-pay-1" class="libertyreserve-pay-1" type="text" name="lr_amnt" value="'.$libertyreserve_summ.'" size="3" title="'.JText::_('MOD_AMONEY_ENTER_AMOUNT').'" '.$amofixed.' />
 </span>
-	<input type="hidden" name="lr_currency" value="'.$currency_libertyreserve1.'" />'; }?>
-	<input type="hidden" name="lr_comments" value="<?php echo $wm_descpay1;?>" />
-	<input type="hidden" name="lr_success_url" value="<?php echo $libertyreserve_successurl;?>" />
-	<input type="hidden" name="lr_fail_url" value="<?php echo $libertyreserve_errorurl;?>" />
-	<input type="hidden" name="language" value="<?php echo $country; ?>" />
-	<!-- baggage field -->
-	<input type="hidden" name="order_id" value="<?php echo $random_chars1; ?>" />
-				</div>
-				<div class="cont2" style="text-align: center;">
-					<input id="libertyreserve-pay-button" class="<?php echo $am_button; ?>" type="submit" name="libertyreservesubmit" value="<?php echo $btntxt;?>" />
-				</div>
-	</form>
+    <input type="hidden" name="lr_currency" value="'.$currency_libertyreserve1.'" />'; }?>
+    <input type="hidden" name="lr_comments" value="<?php echo $wm_descpay1;?>" />
+    <input type="hidden" name="lr_success_url" value="<?php echo $libertyreserve_successurl;?>" />
+    <input type="hidden" name="lr_fail_url" value="<?php echo $libertyreserve_errorurl;?>" />
+    <input type="hidden" name="language" value="<?php echo $country; ?>" />
+    <!-- baggage field -->
+    <input type="hidden" name="order_id" value="<?php echo $random_chars1; ?>" />
+                </div>
+                <div class="cont2" style="text-align: center;">
+                    <input id="libertyreserve-pay-button" class="<?php echo $am_button; ?>" type="submit" name="libertyreservesubmit" value="<?php echo $btntxt;?>" />
+                </div>
+    </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php 
-	}
-	if ($use_moneybookers) 
-	{?>
+    <?php 
+    }
+    if ($use_moneybookers) 
+    {?>
 <!-- MoneyBookers -->
 <div id="moneybookers" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<form id="moneybookers-pay" name="moneybookers" method="post" action="<?php echo $moneybookers_url_adds; ?>" target="_blank">
-				<div class="cont1" style="text-align: center;">
-					<div id="h21" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
-				<div class="cont1" style="text-align: center;">
-					<span class="letter"><?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT1');?></span>
-				</div>
-				<div class="cont1" style="text-align: center;">
+    <form id="moneybookers-pay" name="moneybookers" method="post" action="<?php echo $moneybookers_url_adds; ?>" target="_blank">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h21" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <span class="letter"><?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT1');?></span>
+                </div>
+                <div class="cont1" style="text-align: center;">
 <?php if ($choose_cur1) { ?>
 <span class="focus-example1">
-			<input id="moneybookers-pay-1" class="moneybookers-pay-1" type="text" name="amount" size="3" value="<?php echo $moneybookers_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />
+            <input id="moneybookers-pay-1" class="moneybookers-pay-1" type="text" name="amount" size="3" value="<?php echo $moneybookers_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />
 </span>
 <span class="focus-example">
-			<select id="moneybookers-pay-2" class="moneybookers-pay-2" name="currency" title="<?php echo JText::_('MOD_AMONEY_CHOOSE_A_CURRENCY'); ?>" style="min-width:30px;">
-			<optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>">
-			<?php foreach ($curr1 as $cur_code1) {
-				$selected1 = ($cur_code1['code'] == $currency_moneybookers)?' selected="selected"':'';
-				echo '<option value="'.$cur_code1['code'].'"'.$selected.'>'.$cur_code1['title'].'</option>';
-			}
-			?>
-			</optgroup>
-			</select></span>
+            <select id="moneybookers-pay-2" class="moneybookers-pay-2" name="currency" title="<?php echo JText::_('MOD_AMONEY_CHOOSE_A_CURRENCY'); ?>" style="min-width:30px;">
+            <optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>">
+            <?php foreach ($curr1 as $cur_code1) {
+                $selected1 = ($cur_code1['code'] == $currency_moneybookers)?' selected="selected"':'';
+                echo '<option value="'.$cur_code1['code'].'"'.$selected.'>'.$cur_code1['title'].'</option>';
+            }
+            ?>
+            </optgroup>
+            </select></span>
 <?php } else echo '<span class="focus-example"><span class="letter">'.$currency_moneybookers.'</span>&nbsp;&nbsp;
-					<input id="moneybookers-pay-1" class="moneybookers-pay-1" type="text" name="amount" size="3" value="'.$moneybookers_summ.'" title="'.JText::_('MOD_AMONEY_ENTER_AMOUNT').'" '.$amofixed.' />
+                    <input id="moneybookers-pay-1" class="moneybookers-pay-1" type="text" name="amount" size="3" value="'.$moneybookers_summ.'" title="'.JText::_('MOD_AMONEY_ENTER_AMOUNT').'" '.$amofixed.' />
 </span>
-					<input type="hidden" name="currency" value="'.$currency_moneybookers.'"/>'; ?>
-					<input type="hidden" name="pay_to_email" value="<?php echo $moneybookers_email;?>" />
-					<input type="hidden" name="status_url" value="<?php echo $moneybookers_successurl;?>" />
-					<input type="hidden" name="language" value="<?php echo $country1; ?>" />
-					<input type="hidden" name="detail1_description" value="<?php echo $pretext6;?>" />
-					<input type="hidden" name="detail1_text" value="<?php echo $wm_descpay1;?> &mdash; N<?php echo $random_chars1; ?>" />
-				</div>
-				<div class="cont2" style="text-align: center;">
-					<input id="moneybookers-pay-button" class="<?php echo $am_button; ?>" type="submit" name="moneybookerssubmit" value="<?php echo $btntxt;?>" />
-				</div>
+                    <input type="hidden" name="currency" value="'.$currency_moneybookers.'"/>'; ?>
+                    <input type="hidden" name="pay_to_email" value="<?php echo $moneybookers_email;?>" />
+                    <input type="hidden" name="status_url" value="<?php echo $moneybookers_successurl;?>" />
+                    <input type="hidden" name="language" value="<?php echo $country1; ?>" />
+                    <input type="hidden" name="detail1_description" value="<?php echo $pretext6;?>" />
+                    <input type="hidden" name="detail1_text" value="<?php echo $wm_descpay1;?> &mdash; N<?php echo $random_chars1; ?>" />
+                </div>
+                <div class="cont2" style="text-align: center;">
+                    <input id="moneybookers-pay-button" class="<?php echo $am_button; ?>" type="submit" name="moneybookerssubmit" value="<?php echo $btntxt;?>" />
+                </div>
 </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php 
-	}
-	if ($use_robox)
-	{?>
+    <?php 
+    }
+    if ($use_robox)
+    {?>
 <!-- Robox -->
 <div id="robox" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<form id="robox-pay" name="robox" method="post" action="<?php echo $robox_url_adds; ?>" target="_blank">
-				<div class="cont1" style="text-align: center;">
-					<div id="h22" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
-				<div class="cont1" style="text-align: center;">
-					<span class="letter"><?php echo JText::_('MOD_AMONEY_FIXED_AMOUNT');?></span>
-				</div>
-				<div class="focus-example cont1" style="text-align: center;">
+    <form id="robox-pay" name="robox" method="post" action="<?php echo $robox_url_adds; ?>" target="_blank">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h22" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <span class="letter"><?php echo JText::_('MOD_AMONEY_FIXED_AMOUNT');?></span>
+                </div>
+                <div class="focus-example cont1" style="text-align: center;">
       <input type="hidden" name="MrchLogin" value="<?php echo $mrh_login;?>" />
       <input id="robox-pay-1" class="robox-pay-1" type="text" name="outsum" size="3" value="<?php echo $out_summ;?>" title="<?php echo JText::_('MOD_AMONEY_A_FIXIXED_AMOUNT'); ?>" readonly="readonly" />&nbsp;<span class="letter">WMR</span>
       <input type="hidden" name="InvId" value="<?php echo $inv_id;?>"  />
@@ -1627,98 +1627,98 @@ if ($donate_len == 0) {
       <input type="hidden" name="Shp_item" value="<?php echo $shp_item;?>" />
       <input type="hidden" name="IncCurrLabel" value="<?php echo $in_curr;?>" />
       <input type="hidden" name="Culture" value="<?php echo $culture;?>" />
-				</div>
-				<div class="cont2" style="text-align: center;">
-					<input id="robox-pay-button" class="<?php echo $am_button; ?>" type="submit" name="roboxsubmit" value="<?php echo $btntxt;?>" />
-				</div>
+                </div>
+                <div class="cont2" style="text-align: center;">
+                    <input id="robox-pay-button" class="<?php echo $am_button; ?>" type="submit" name="roboxsubmit" value="<?php echo $btntxt;?>" />
+                </div>
 </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php 
-	}
-	if ($use_sms)
-	{?>
+    <?php 
+    }
+    if ($use_sms)
+    {?>
 <!-- Smskopilka -->
 <div id="sms" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-				<div class="cont1" style="text-align: center;">
-					<div id="h23" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
-				<div class="cont1" style="text-align: center;">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h23" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
 <a rel="nofollow" href="javascript:void(0)" onclick="javascript:window.open('http://smskopilka.ru/?info&amp;id=<?php echo $sms_id;?>','smskopilka','width=450,height=480,status=no,toolbar=no, menubar=no,scrollbars=yes,resizable=yes');">
 <img class="kopilka south" src="<?php echo $smskopimg;?><?php echo $sms_imag;?>.gif" alt="<?php echo JText::_('MOD_AMONEY_SMS_ALT');?>" title="<?php echo JText::_('MOD_AMONEY_SMS_TIILE');?>" style="border:0" /></a>
-				</div>
+                </div>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php 
-	}
-	if ($use_smsz)
-	{?>
+    <?php 
+    }
+    if ($use_smsz)
+    {?>
 <!-- Smszamok -->
 <div id="smsz" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<form id="smszamok-pay" name="smszamok" method="post" action="javascript:void(0)" onclick="window.open('http://iface.smszamok.ru/client/instructions.php?pid=<?php echo $smsz_id;?>', '_blank', 'location=no,height=300,width=700,scrollbars=1,resizable=1', false);">
-				<div class="cont1" style="text-align: center;">
-					<div id="h24" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
-				<div class="cont1" style="text-align: center;">
-					<span class="letter"><?php echo JText::_('MOD_AMONEY_SMS_DESCRIPTION');?></span>
-				</div>
-				<div class="cont2" style="text-align: center;">
-				<button id="smszamok-pay-button" class="<?php echo $am_button; ?>"><?php echo $btntxt;?></button>
-				</div>
-	</form>
+    <form id="smszamok-pay" name="smszamok" method="post" action="javascript:void(0)" onclick="window.open('http://iface.smszamok.ru/client/instructions.php?pid=<?php echo $smsz_id;?>', '_blank', 'location=no,height=300,width=700,scrollbars=1,resizable=1', false);">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h24" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <span class="letter"><?php echo JText::_('MOD_AMONEY_SMS_DESCRIPTION');?></span>
+                </div>
+                <div class="cont2" style="text-align: center;">
+                <button id="smszamok-pay-button" class="<?php echo $am_button; ?>"><?php echo $btntxt;?></button>
+                </div>
+    </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php 
-	}
-	if ($use_mmail)
-	{?>
+    <?php 
+    }
+    if ($use_mmail)
+    {?>
 <!-- MoneyMail -->
 <div id="mmail" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<?php echo $mail_li; ?>
+    <?php echo $mail_li; ?>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php 
-	}
-	if ($use_liqpay)
-	{?>
+    <?php 
+    }
+    if ($use_liqpay)
+    {?>
 <!-- liqpay -->
 <div id="liqpay" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-	<form id="liqpay-pay" name="liqpay" method="post" action="<?php echo $liqpay_url_adds; ?>" target="_blank">
-				<div class="cont1" style="text-align: center;">
-					<div id="h26" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php 
-						echo $off_intrerst;
-						echo $switch_fixed;
-					?>
-				<div class="cont2" style="text-align: center;">
-					<input id="liqpay-pay-button" class="<?php echo $am_button; ?>" type="submit" name="liqpaysubmit" value="<?php echo $btntxt;?>"/>
-				</div>
-	</form>
+    <form id="liqpay-pay" name="liqpay" method="post" action="<?php echo $liqpay_url_adds; ?>" target="_blank">
+                <div class="cont1" style="text-align: center;">
+                    <div id="h26" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php 
+                        echo $off_intrerst;
+                        echo $switch_fixed;
+                    ?>
+                <div class="cont2" style="text-align: center;">
+                    <input id="liqpay-pay-button" class="<?php echo $am_button; ?>" type="submit" name="liqpaysubmit" value="<?php echo $btntxt;?>"/>
+                </div>
+    </form>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php 
-	}
-	if ($use_smscoin)
-	{?>
+    <?php 
+    }
+    if ($use_smscoin)
+    {?>
 <!-- SMScoin -->
 <div id="smscoin" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-				<div class="cont1" style="text-align: center;">
-					<div id="h27" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <div id="h27" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
 <div id="cont2" class="cont2" style="text-align: center;">
 <script type="text/javascript">
 /* <![CDATA[ */
@@ -1744,19 +1744,19 @@ smsDonateInit();
 </script>
 </div>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php 
-	}
-	if ($use_cbank)
-	{?>
+    <?php 
+    }
+    if ($use_cbank)
+    {?>
 <!-- CberBank -->
 <div id="cbank" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>;text-align: center;">
-				<div class="cont1" style="text-align: center;">
-					<div id="h28" class="ctynh15" style="text-align: center;"></div>
-				</div>
-					<?php echo $off_intrerst; ?>
+                <div class="cont1" style="text-align: center;">
+                    <div id="h28" class="ctynh15" style="text-align: center;"></div>
+                </div>
+                    <?php echo $off_intrerst; ?>
 <div id="cont3" class="cont2" style="text-align: center;">
 
 <script type="text/javascript">
@@ -1847,15 +1847,15 @@ win.document.close()
 
 </div>
 <div class="poweredby1" style="text-align: center;">
-	<?php echo $copy;?>
+    <?php echo $copy;?>
 </div>
 </div>
-	<?php
-	}
-	if ($info_liqpay)
-	{?>
+    <?php
+    }
+    if ($info_liqpay)
+    {?>
 <div id="ampoweredby_inf" style="text-align: center;">
-					<?php 
+                    <?php
 if ($params->get('switch_fixed')==1) {
 $operation_envelop = '<operation_envelope>';
 $operation_envelop .= '<operation_xml>'.$operation_xml.'</operation_xml>';
@@ -1868,9 +1868,9 @@ $post .= '</request>';
 $url = "https://www.liqpay.com/?do=api_xml";
 $page = "/?do=api_xml";
 $headers = array("POST ".$page." HTTP/1.0",
-			"Content-type: text/xml;charset=\"utf-8\"",
-			"Accept: text/xml",
-			"Content-length: ".strlen($post));
+            "Content-type: text/xml;charset=\"utf-8\"",
+            "Accept: text/xml",
+            "Content-length: ".strlen($post));
      $ch = curl_init();
      curl_setopt($ch, CURLOPT_URL, $url);
      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -1882,7 +1882,7 @@ $headers = array("POST ".$page." HTTP/1.0",
      $result = curl_exec($ch);
      curl_close($ch);
      echo $result;
-} else { 
+} else {
 $operation_envelop = '<operation_envelope>';
 $operation_envelop .= '<operation_xml>'.$xml_encoded.'</operation_xml>';
 $operation_envelop .= '<signature>'.$lqsignature.'</signature>';
@@ -1894,9 +1894,9 @@ $post .= '</request>';
 $url = "https://www.liqpay.com/?do=api_xml";
 $page = "/?do=api_xml";
 $headers = array("POST ".$page." HTTP/1.0",
-			"Content-type: text/xml;charset=\"utf-8\"",
-			"Accept: text/xml",
-			"Content-length: ".strlen($post));
+            "Content-type: text/xml;charset=\"utf-8\"",
+            "Accept: text/xml",
+            "Content-length: ".strlen($post));
      $ch = curl_init();
      curl_setopt($ch, CURLOPT_URL, $url);
      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -1908,14 +1908,14 @@ $headers = array("POST ".$page." HTTP/1.0",
      $result = curl_exec($ch);
      curl_close($ch);
      echo $result;
-}; 
-					?>
+};
+                    ?>
 </div>
 <?php
-	}?>
+    }?>
 <div id="ampoweredby" class="ampoweredby1" style="text-align: center;"><?php 
-	if ($exterlink)
-	{
+    if ($exterlink)
+    {
 echo $copcop;
-	}?></div>
+    }?></div>
 <!-- Leonidas "Donate-Amoney" Module (v1.0.9) ends here -->
