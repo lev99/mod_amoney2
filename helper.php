@@ -12,7 +12,7 @@
 ## Author...........: Leonidas                                                ##
 ## Version..........: 1.0.9                                                   ##
 ## Created date.....: 03.06.2014                                              ##
-## Contact info.....: url: www.foto-s.ru / e-mail: leonidas78@mail.ru         ##
+## Contact info.....: url: foto-s.ru / e-mail: leonidas78@mail.ru             ##
 ## Joomla Version...: 2.5.х and 3.0.x Stable and high                         ##
 ## Note.............: This script is a part of AMoney 1.0 package.            ##
 ## Based............: on AMoney 1.0 by Adeptus[http://www.adeptsite.info]     ##
@@ -23,7 +23,7 @@ defined('_JEXEC') or die;
 
 // Global
 $mainframe = JFactory::getApplication();
-$mosConfig_live_site = JURI::base( true ); 
+$mosConfig_live_site = JURI::base( true );
 
 //css
 $document =& JFactory::getDocument();
@@ -81,12 +81,12 @@ $document->addStyleSheet('modules/mod_amoney/css/tipsy.css' );
 };
 // Note: please refer: "Powered by Donate-Amoney" - not to remove, if you want to remove, please contact the author of the script!
 $str2 = 'Donate-Amoney';
-$str1 = 'http://www.foto-s.ru/universal-module.html';
+$str1 = 'http://foto-s.ru/newspage/joomla/413-universal-module';
 $str3 = JText::_('MOD_AMONEY_POWERED_BY');
 $str4 = JText::_('MOD_AMONEY_VISIT_AUTHOR');
-$copcop = 'Работает на&nbsp;<a id="north" href="http://www.foto-s.ru/universal-module.html" title="Посетить Автора!" rel="nofollow">Donate-Amoney</a>';
+$copcop = 'Работает на&nbsp;<a id="north" href="http://foto-s.ru/newspage/joomla/413-universal-module" title="Посетить Автора!" rel="nofollow">Donate-Amoney</a>';
 if ($params->get('copy')==1) {
-$copycopy='<span class="letter">Работает на</span>&nbsp;<a class="north" href="http://www.foto-s.ru/universal-module.html" title="Посетить Автора!" rel="nofollow"><span class="letter1">Donate-Amoney</span></a>';
+$copycopy='<span class="letter">Работает на</span>&nbsp;<a class="north" href="http://foto-s.ru/newspage/joomla/413-universal-module" title="Посетить Автора!" rel="nofollow"><span class="letter1">Donate-Amoney</span></a>';
 $copy= $copycopy; }
 else { $copy=""; };
 $width_border = $params->get('width_border', '100');
@@ -217,12 +217,12 @@ $libertyreserve_url_adds = "https://sci.libertyreserve.com";
 $libertyreserve_successurl = $params->get('libertyreserve_successurl', JURI::base());
 $libertyreserve_errorurl = $params->get('libertyreserve_errorurl', JURI::base());
 //////
-$currency_libertyreserve	= $params->def( 'currency_libertyreserve', 'USD' );
+$currency_libertyreserve    = $params->def( 'currency_libertyreserve', 'USD' );
 $curr = array();
 $curr[] = array('code'=>'LRUSD', 'title'=>'U.S Dollar');
 $curr[] = array('code'=>'LREUR', 'title'=>'Euros');
-$choose_cur	= $params->def( 'choose_cur', 0 );
-$country	= $params->def( 'country', 'US' );
+$choose_cur = $params->def( 'choose_cur', 0 );
+$country    = $params->def( 'country', 'US' );
 $gost12 = array(
 "USD"=>"LRUSD","EUR"=>"LREUR"
 );
@@ -233,13 +233,13 @@ $gost13 = array(
 $currency_libertyreserve2 = strtr($currency_libertyreserve, $gost13);
 // MoneyBookers
 $use_moneybookers = $params->get('use_moneybookers', 0);
-$choose_cur1	= $params->def( 'choose_cur1', 0 );
+$choose_cur1    = $params->def( 'choose_cur1', 0 );
 $currency_moneybookers = $params->def( 'currency_moneybookers', 'USD' );
 $moneybookers_email = $params->get('moneybookers_email','andrew.opeyda@gmail.com');
 $moneybookers_summ = $params->get('moneybookers_summ', '10');
 $moneybookers_url_adds = "https://www.moneybookers.com/app/payment.pl";
 $moneybookers_successurl = $params->get('moneybookers_successurl', JURI::base());
-$country1	= $params->def( 'country1', 'US' );
+$country1   = $params->def( 'country1', 'US' );
 $curr1 = array();
 $curr1[] = array('code'=>'USD', 'title'=>'USD - $');
 $curr1[] = array('code'=>'AUD', 'title'=>'AUD - $');
